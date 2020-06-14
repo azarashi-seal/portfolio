@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ 
+
+
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+   <!-- bootstrap -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+   <!-- drawer -->
+   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://sdk.form.run/js/v2/formrun.js"></script>
+  <link href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" rel="stylesheet">
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="manifest" href="img/site.webmanifest">
+  <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body class="drawer drawer--right">
+ <div class="container-fluid">
+   <div id="head">
+  <header class="header" role="banner">
+
+    <!-- mobile-nav -->
+    <div class="burger">
+      <button type="button" class="drawer-toggle drawer-hamburger">
+        <span class="sr-only">toggle navigation</span>
+        <span class="drawer-hamburger-icon"></span>
+      </button>
+
+    <nav class="h-nav-mobile drawer-nav" role="navigation">
+      <!-- <div class="nav-menu-mobile"> -->
+        <ul class="nav-ul-mobile drawer-menu">
+          <li class="nav-list-mobile"><a class="drawer-menu-item" href="#about">About</a></li>
+          <li class="nav-list-mobile"><a class="drawer-menu-item" href="#services">Services</a></li>
+          <li class="nav-list-mobile"><a class="drawer-menu-item" href="#works">Works</a></li>
+          <li class="nav-list-mobile"><a class="drawer-menu-item" href="#contact">Contact</a></li>
+        </ul>
+      <!-- </div> -->
+    </nav>
+    </div>
+    <!-- /.burger -->
+
+    <!-- pc-nav -->
+    <div class="pc-nav">
+   <nav class="h-nav">
+     <div class="nav-home">
+       <a href="#">
+       Minami
+      </a>
+     </div>
+     <div class="nav-menu">
+       <ul class="nav-ul">
+         <li class="nav-list"><a href="#about"><div>About</div></a></li>
+         <li class="nav-list"><a href="#services"><div>Services</div></a></li>
+         <li class="nav-list"><a href="#works"><div>Works</div></a></li>
+         <li class="nav-list"><a href="#contact"><div>Contact</div></a></li>
+       </ul>
+     </div>
+   </nav>
+  </div>
+  <!-- /.pc-nav -->
+
+   <div id="h-title">
+   <h1>Minami's<br>Portfolio</h1>
+   </div>
+  </header>
+  </div>
+  <!-- #head -->
+
+  <main class="main" role="main">
+    <section class="about" id="about">
+      <h2 class="main-title">About</h2>
+      <div class="about-box row">
+        <div class="col-12 col-xl-6 prof">
+          <h3>Profile</h3>
+          <p class="about-text text">
+            神奈川県在住のMinami(花谷 実菜美)です。<br>
+            大学卒業後、不動産会社に就職。<br>
+            現在は、飲料メーカで営業をしております。<br>
+            手に職をつけるべく、WEB制作のスキルを習得中です。
+          </p>
+        </div>
+
+        <div class="col-12 col-xl-6 skill">
+          <h3>Skill</h3>
+
+          <div class="about-skill">
+            <div class="skill-box">
+            <h4 class="skill-title under-line">HTML5</h4>
+            <i class="fab fa-html5 skill-icon"></i>
+            </div>
+            <div class="skill-box">
+            <h4 class="skill-title under-line">CSS3</h4>
+            <i class="fab fa-css3 skill-icon"></i>
+            </div>
+            <div class="skill-box">
+              <h4 class="skill-title under-line">JavaScript</h4>
+              <i class="fab fa-js-square skill-icon"></i>
+            </div>
+            <div class="skill-box">
+              <h4 class="skill-title under-line">BootStrap</h4>
+              <i class="fab fa-bootstrap skill-icon"></i>
+            </div>
+          </div>
+          <!-- ./about-skill -->
+        </div> 
+        <!-- /.skill -->
+      </div>
+      <!-- /.about-box -->
+    </section>
+
+    <section class="services" id="services">
+      <h2 class="main-title">Services</h2>
+      <div class="row services-box">
+        <div class="col-12 col-md-4 py-sm-1 px-sm-5 px-md-2 s-code">
+          <h4 class="service-title"><span class="stripe">コーディング作業</span></h4>
+          <div class="row">
+            <div class="col-12 col-sm-3 col-md-12 services-icon">
+          <i class="fas fa-code s-icon"></i>
+          </div>
+          <p class="col-12 col-sm-9 col-md-12 pt-sm-2 pl-sm-2 px-md-4 px-lg-5 services-text text">
+            ご希望のデザインをもとに、コーディング作業を行います。<br>
+            内部SEO対策を考慮して制作致します。
+          </p>
+          </div>  
+        </div>
+        <div class="col-12 col-md-4 py-sm-1 px-sm-5 px-md-2 s-smart">
+          <h4 class="service-title"><span class="stripe">モバイルサイズ対応</span></h4>
+          <div class="row">
+            <div class="col-12 col-sm-3 col-md-12">
+          <i class="fas fa-mobile-alt s-icon"></i>
+          </div>
+          <p class="col-12 col-sm-9 col-md-12 pt-sm-2 pl-sm-2 px-md-4 px-lg-5 services-text text">
+            WEBサイトをPC・タブレット・スマートフォン、各種端末から閲覧しても最適な表示がされるように設定致します。
+          </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 py-sm-1 px-sm-5 px-md-2 s-lp">
+          <h4 class="service-title"><span class="stripe">WEBサイト制作</span></h4>
+          <div class="row">
+            <div class="col-12 col-sm-3 col-md-12">
+            <i class="fas fa-laptop-code s-icon"></i>
+            </div>
+          <p class="col-12 col-sm-9 col-md-12 pt-sm-2 pl-sm-2 px-md-4 px-lg-5 services-text text">
+            コーポレートサイト制作、LP(ランディングページ)制作などを承ります。
+          </p>
+          </div>
+        </div>
+      </div>
+      <!-- /.services-box -->
+    </section>
+
+    <section class="works" id="works">
+      <h2 class="main-title">Works</h2>
+      <div class="row works-box">
+        <div class="col-12 col-lg-6 works-one">
+          <h4><span class="under-line">模写➀</span></h4>
+          <p>ホームページ</p>
+          <a href="img/LP模写➀.png"><img src="img/LP模写➀画像.png" alt="LP模写➀"></a>
+        </div>
+        <div class="col-12 col-lg-6 works-two">
+          <h4><span class="under-line">LP模写➁</span></h4>
+          <p>コーポレートサイト</p>
+          <a href="img/LP模写➁.png"><img src="img/LP模写➁画像.png" alt="LP模写➁"></a>
+        </div>
+      </div>
+      <!-- /.works-box -->
+
+
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="main-title">Contact</h2>
+      <p>お気軽にお問い合わせください</p>
+      <div class="form">
+        <form class="formrun" action="https://form.run/api/v1/r/xe5rkhcocgoakwmr576ss7nn" method="post">
+          <!-- ↓自由に要素を追加・編集することができます -->
+          <div>
+            <label class="name-label">お名前</label>
+            <input name="お名前" type="text">
+          </div>
+        
+          <div>
+            <label class="mail-label">メールアドレス <span class="contact-span">[必須]</span></label>
+            <input class="mail-input" name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required>
+            <div class="error" data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
+          </div>
+        
+          <div class="contact-box">
+            <label class="contact-label">お問い合わせ内容 <span class="contact-span">[必須]</span></label>
+            <textarea class="contact-text" name="お問い合わせ" data-formrun-required></textarea>
+            <div class="error" data-formrun-show-if-error="お問い合わせ">お問い合わせ内容を入力してください</div>
+          </div>
+        
+          <!-- ボット投稿をブロックするためのタグ -->
+          <div class="_formrun_gotcha">
+            <style media="screen">._formrun_gotcha {position:absolute!important;height:1px;width:1px;overflow:hidden;}</style>
+            <label for="_formrun_gotcha">If you are a human, ignore this field</label>
+            <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
+          </div>
+        
+          <div class="button">
+          <button id="sub-button" type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信</button>
+        </div>
+        </form>
+        
+      </div>
+      <!-- /.form -->
+    </section>
+  </main>
+
+  <div class="foot">
+  <footer class="footer">
+    <div id="foot-text">
+      <p><small>&copy;Minami Portfolio 2020</small></p>
+    </div>
+  </footer>
+  </div>
+  <!-- /.foot -->
+</div>
+<!-- /.conteiner -->
+
+<!-- drawer -->
+<script>
+  jQuery(function($){
+    $(document).ready(function() {
+      $(".drawer").drawer();
+    });
+  });
+  </script>
+
+  <!-- bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>
