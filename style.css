@@ -169,12 +169,14 @@ h4{
   padding: 2em 10%;
   box-sizing: border-box;
 }
+#icon{
+  height: 2em;
+  width: 2em;
+}
 .prof{
-  width: 50%;
   box-sizing: border-box;
 }
 .skill{
-  width: 50%;
   box-sizing: border-box;
 }
 .under-line{
