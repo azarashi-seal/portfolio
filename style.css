@@ -170,7 +170,6 @@ h4{
   box-sizing: border-box;
 }
 .about-title{
-  /* padding-left: 1.3em; */
   margin-bottom: 0;
 }
 .fa-twitter{
@@ -180,12 +179,9 @@ h4{
 }
 .icon-box{
   text-align: center;
-  /* margin-top: -2rem; */
   transform: translateY(-2rem);
 }
 #icon{
-  /* height: 1.5em;
-  width: 1.5em; */
   height: 7rem;
   width: 7rem;
 }
@@ -331,6 +327,9 @@ section{
 /* モバイル版
 --------------------------------------- */
 @media screen and (max-width: 959px){
+  #head{
+    background-position: 5% 0%;
+  }
   .skill{
     margin-top: 1em;
   }
