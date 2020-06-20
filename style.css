@@ -169,9 +169,25 @@ h4{
   padding: 2em 10%;
   box-sizing: border-box;
 }
+.about-title{
+  /* padding-left: 1.3em; */
+  margin-bottom: 0;
+}
+.fa-twitter{
+  color: #1DA1F2;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.icon-box{
+  text-align: center;
+  /* margin-top: -2rem; */
+  transform: translateY(-2rem);
+}
 #icon{
-  height: 2em;
-  width: 2em;
+  /* height: 1.5em;
+  width: 1.5em; */
+  height: 7rem;
+  width: 7rem;
 }
 .prof{
   box-sizing: border-box;
