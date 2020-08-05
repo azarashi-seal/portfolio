@@ -1,0 +1,454 @@
+@charset "UTF-8" ;
+
+/* 共通部分
+-------------------------------- */
+html {
+  font-size: 16px;
+  overflow-x: hidden;
+}
+body{
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+  overflow-x: hidden;
+}
+img {
+  max-width: 100%;
+}
+li {
+  list-style: none;
+}
+
+/* Header
+---------------------------------- */
+.header {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+#head{
+  background-image: url(img/head-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1{
+  font-size: 8em;
+  text-shadow: 6px 6px 4px rgb(12, 104, 241);
+  transform: rotate(-5deg);
+  color: white;
+  opacity: .85;
+  line-height: 1;
+}
+.h-nav{
+  font-family: 'Lobster', cursive;
+}
+.nav-ul{
+  display: flex;
+}
+.nav-list{
+  margin-left: 2rem;
+}
+.nav-list,
+.nav-home{
+  font-size: 28px;
+}
+.h-nav{
+  display: flex;
+  justify-content: space-between;
+  background: skyblue;
+  opacity: .8;
+  position: fixed;
+  width: 100%;
+  padding: .5rem;
+  height: 3.5rem;
+} 
+.h-nav a {
+  color: #ffffff;
+}
+.h-nav a:hover{
+  color: #009bc6;
+}
+.h-img{
+  width: 100%;
+  height: auto;
+}
+#h-title{
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+/* ハンバーガー */
+.h-nav-mobile{
+  width: 30%;
+}
+.drawer--right.drawer-open .drawer-hamburger {
+  right: 30%;
+}
+button:focus {
+  outline: none;
+}
+
+/* Footer
+-------------------------------------- */
+.footer {
+  height: 100px;
+  color: white;
+  text-align: center;
+}
+.foot{
+  background-image: url(img/footer-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#foot-text small{
+  margin: 0 auto;
+  height: 100%;
+}
+#foot-text{
+  padding: 1rem;
+}
+
+
+/* main
+--------------------------------------- */
+section{
+  box-sizing: border-box;
+}
+.container-fluid{
+  max-width: 100%;
+  padding: 0;
+}
+h1,h2,h3{
+  font-family: 'Lobster', cursive;
+}
+
+h2{
+  font-size: 5rem;
+  font-weight: normal;
+  margin-bottom: 20px;
+  text-align: center;
+}
+h3{
+  font-size: 3rem;
+  font-weight: normal;
+  text-align: left;
+  padding: 0 3rem;
+}
+h4{
+  font-size: 18px;
+}
+.stripe{
+  position: relative;
+  padding: 0.3em;
+}
+.stripe:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 7px;
+  background: repeating-linear-gradient(-45deg, skyblue, skyblue 2px, white 2px, white 4px);
+}
+
+.main{
+  padding: 0 3%;
+  margin-bottom: 30px;
+}
+.text{
+  text-align: left;
+}
+.about-text{
+  padding: 0 2em;
+}
+
+/* About */
+.about-box{
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 10%;
+  box-sizing: border-box;
+}
+.about-title{
+  margin-bottom: 0;
+}
+.fa-twitter{
+  color: #1DA1F2;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.icon-box{
+  text-align: center;
+  transform: translateY(-2rem);
+}
+#icon{
+  height: 7rem;
+  width: 7rem;
+}
+.prof{
+  box-sizing: border-box;
+}
+.skill{
+  box-sizing: border-box;
+}
+.under-line{
+  background: linear-gradient(transparent 70%, #a8eaff 70%);
+}
+.about-skill{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0 2em;
+}
+
+.skill-icon{
+  font-size: 50px;
+}
+
+/* Services */
+.services-box{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.service-title{
+  margin-bottom: 1rem;
+}
+.s-icon{
+  font-size: 60px;
+  color: white;
+  background-color: skyblue;
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
+  border-radius: 50%;
+  padding-top: 15px;
+  margin-bottom: 1rem;
+}
+
+.s-code,
+.s-smart,
+.s-lp{
+  width: 30%;
+  padding: 4rem;
+}
+section{
+  padding-top: 50px;
+  padding-bottom: 50px;}
+
+/* Works */
+.works-box{
+  display: flex;
+  padding: 3rem 0;
+}
+.works-one,
+.works-two{
+  text-align: center;
+}
+.works-box img{
+  border: 3px solid rgb(172, 170, 170);
+  border-radius: 10px;
+  box-shadow: 0px 3px 8px -4px  #ccc;
+}
+.works-box img:hover{
+  box-shadow: 0px 10px 20px;
+  transform: translateY(-2px);
+  transition: .3s;
+  color: #ccc;
+}
+
+/* Contact */
+.contact{
+  background: #e6f0f0;
+  margin: 0 auto;
+  opacity: .8;
+  
+}
+.form{
+  max-width: 80%;
+  margin: 0 auto;
+}
+.form input,
+.form textarea{
+  background-color: white;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: .5rem;
+  line-height: 2;
+  border: 1px solid white;
+}
+.form input:hover,
+.form textarea:hover{
+  border: 1px solid skyblue;
+}
+.form textarea{
+  height: 15rem;
+}
+.contact-box{
+  margin-top: 2rem;
+}
+.form label,
+.form input{
+  display: block;
+}
+.button{
+  text-align: center;
+}
+#sub-button{
+  padding: .5rem 1rem;
+  background: skyblue;
+}
+.button{
+  color: white;
+}
+.button:hover #sub-button{
+ background: #009bc6;
+}
+.error,
+.contact-span{
+  font-size: .8rem;
+  color: red;
+}
+.contact .main-title{
+  margin-bottom: 0;
+}
+.contact p{
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 18px;
+  transform: skewX(-15deg);
+}
+
+/* Z-index */
+.h-nav{
+  z-index: 20;
+}
+
+/* モバイル版
+--------------------------------------- */
+@media screen and (max-width: 959px){
+  #head{
+    background-position: 5% 0%;
+  }
+  .skill{
+    margin-top: 1em;
+  }
+  .skill-icon{
+    font-size: 75px;
+  }
+  .s-code, .s-smart, .s-lp{
+    padding: 2em 1em;
+  }
+.works-box{
+  padding-top: 2em;
+}
+.works-two{
+  margin-top: 2em;
+}
+.works-box p{
+  margin-bottom: .3rem;
+}
+}
+@media screen and (min-width:900px){
+  .footer{
+    height: 150px;
+  }
+}
+@media screen and (min-width:769px){
+  .burger{
+    display: none;
+  }
+}
+@media screen and (max-width:768px){
+  .pc-nav{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 559px){
+  html{
+    font-size: 14px;
+  }
+  #h-title{
+    bottom: 35%;
+  }
+  h1{
+    font-size: 5em;
+  }
+  .main{
+    padding: 0 2em;
+  }
+  h2{
+    font-size: 3.5em;
+  }
+  h3{
+    font-size: 2em;
+    padding: 0;
+  }
+  h4{
+    font-size: 1.2em;
+  }
+  section{
+    padding-top: 20px;
+  }
+  .about-box,
+  .about-skill{
+    padding: 0;
+  }
+  .about-text{
+    padding: .5em;
+  }
+  .skill-icon{
+    font-size: 50px;
+  }
+  .services-text{
+    width: 30%;
+  }
+  .services-icon{
+    width: 70%;
+  }
+  .s-code, .s-smart, .s-lp {
+    padding: 0 4.5em 3em;
+}
+  .s-icon{
+    font-size: 50px;
+    width: 90px;
+    height: 90px;
+  }
+  .works-box{
+    padding: 0;
+  }
+  .works-two{
+    margin-top: 2em;
+  }
+  .works-box p{
+    margin-bottom: .3rem;
+  }
+  #services{
+    padding-bottom: 0;
+  }
+  #contact{
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width:320px){
+  #h-title{
+    bottom: 30%;
+  }
+  h1{
+    font-size: 4em;
+  }
+  .s-code, .s-smart, .s-lp {
+    padding: 0 3em 2em;
+  }
+  .skill-box {
+    padding: 0 .2em;
+  }
+  .skill-title{
+    font-size: .8em;
+  }
+  .skill-icon{
+    font-size: 45px;
+  }
+}
